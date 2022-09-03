@@ -1,0 +1,24 @@
+@mixin pos-center($pos: absolute) {
+  @if ($pos == 'fixed' or $pos == 'absolute') {
+    position: $pos;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin pos-center-x($pos: absolute) {
+  @if ($pos == 'fixed' or $pos == 'absolute') {
+    position: $pos;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@mixin pos-center-y($pos: absolute) {
+  @if ($pos == 'fixed' or $pos == 'absolute') {
+    position: $pos;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
