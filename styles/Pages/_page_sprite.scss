@@ -1,0 +1,82 @@
+// image
+.image-animation {
+  display: none;
+}
+
+// container
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 16px;
+  border: 1px solid black;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 5px #aaa;
+
+  #canvas1 {
+    box-shadow: inset 5px 5px 5px #555;
+  }
+}
+
+.controls {
+  p {
+    margin-bottom: 8px;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  &-box {
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+// ============================================
+// Practice page
+// ============================================
+.img_mandrake {
+  display: none;
+}
+
+#sprite_canvas {
+  box-shadow: inset 5px 5px 5px #555;
+  margin-bottom: 24px;
+}
+
+.group-control {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.button-control {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #777;
+  background-color: aliceblue;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    color: #000;
+    background-color: powderblue;
+  }
+}
