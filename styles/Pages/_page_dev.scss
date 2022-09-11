@@ -1,0 +1,22 @@
+body {
+    overflow: hidden;
+}
+
+.floor,
+#canvas_dev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floor {
+    background: url('/02_game_dev/assets/images/Brick_04.png');
+    transform: rotate3D(1, 0, 1, 45deg) scale(3);
+}
+
+#canvas_dev {
+    // background-color: hotpink;
+    z-index: 10;
+}
