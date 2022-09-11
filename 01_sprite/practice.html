@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="sprite, canvas, animation" />
+    <meta name="description" content="canvas를 이용한 애니메이션 구현 예제" />
+
+    <!-- author -->
+    <meta name="author" content="Dueto Park" />
+
+    <title>Sprite Animation Practice</title>
+
+    <!-- Assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Script -->
+    <script src="/01_sprite/assets/js/page_sprite_practice.js" defer></script>
+  </head>
+  <body>
+    <img
+      class="img_mandrake"
+      src="/01_sprite/assets/images/img_mandrake.png"
+      alt="mandrake image"
+    />
+
+    <div class="container">
+      <canvas id="sprite_canvas"></canvas>
+
+      <div class="group-control">
+        <button
+          type="button"
+          class="button-control"
+          data-min="0"
+          data-max="355"
+        >
+          All
+        </button>
+
+        <button type="button" class="button-control" data-min="0" data-max="75">
+          Grow
+        </button>
+
+        <button
+          type="button"
+          class="button-control"
+          data-min="76"
+          data-max="112"
+        >
+          Wink
+        </button>
+
+        <button
+          type="button"
+          class="button-control"
+          data-min="113"
+          data-max="262"
+        >
+          Float
+        </button>
+
+        <button
+          type="button"
+          class="button-control"
+          data-min="263"
+          data-max="355"
+        >
+          Hide
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
